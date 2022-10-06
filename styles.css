@@ -1,0 +1,24 @@
+
+.printedCardsSection{
+    display: flex;
+    flex-direction: column;
+}
+.printedCard{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 80%;
+}
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgContainer img{
+    width: 100px;
+    height: 100px;
+}
+.pokedataContainer ol{
+    list-style: none;
+}
