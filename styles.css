@@ -16,101 +16,117 @@ body {
     gap: 15px;
     margin-bottom: 30px;
 }
+
 @font-face {
     font-family: pokefont;
     src: url(pokefont.ttf);
 }
-.headerContainer{
+
+.headerContainer {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 60%;
     margin: 0 auto;
 }
-.pokelogo{
+
+.pokelogo {
     width: 40%;
 }
 
-.headerContainer h1{
+.headerContainer h1 {
     font-family: pokefont;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #b3840f;
-    border:solid 5px #684c07;
+    border: solid 5px #684c07;
     width: 70%;
     height: 150px;
     margin: 0 auto;
     gap: 15px;
 }
-.pokeForm{
+
+.pokeForm {
     display: flex;
     gap: 15px;
 }
-.pokeForm input{
-height: 50px;
-width: 100px;
-text-align: center;
-font-size:30px ;
-font-family: pokefont;
-border: solid 5px rgb(221, 17, 17) ;
-background-color: rgb(224, 65, 65);
-color: aliceblue;
-outline: none;
+
+.pokeForm input {
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-family: pokefont;
+    border: solid 5px rgb(221, 17, 17);
+    background-color: rgb(224, 65, 65);
+    color: aliceblue;
+    outline: none;
+    cursor: pointer;
 }
-.pokeForm button{
-height: 50px;
-width: 160px;
-text-align: center;
-font-size:13px ;
-font-family: pokefont;
-background-color: rgb(45, 194, 45);
-border: solid 5px rgb(39, 126, 39) ;
-color: aliceblue;
+
+.pokeForm button {
+    height: 50px;
+    width: 160px;
+    text-align: center;
+    font-size: 13px;
+    font-family: pokefont;
+    background-color: rgb(45, 194, 45);
+    border: solid 5px rgb(39, 126, 39);
+    color: aliceblue;
+    cursor: pointer;
 }
-.pokeForm button:active{
+
+.pokeForm button:active {
     transform: translate(-2px);
 }
-.printedCardsSection{
+
+.printedCardsSection {
     display: flex;
     flex-direction: column;
 }
-.printedCard{
+
+.printedCard {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     width: 80%;
 }
-.imgContainer{
+
+.imgContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.imgContainer img{
+
+.imgContainer img {
     width: 250px;
     height: 250px;
 }
-.pokedataContainer ol{
+
+.pokedataContainer ol {
     list-style: none;
 }
-.printedCardsSection{
+
+.printedCardsSection {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #b3840f;
-    border:solid 5px #684c07;
+    border: solid 5px #684c07;
     width: 70%;
     height: 300px;
     margin: 0 auto;
 }
-.pokedataContainer{
+
+.pokedataContainer {
     text-align: center;
-    display:flex ;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -118,13 +134,15 @@ color: aliceblue;
     width: 300px;
     height: 250px;
     gap: 10px;
-    line-height:1.5;
+    line-height: 1.5;
     text-transform: capitalize;
 }
-.pokedataContainer hr{
+
+.pokedataContainer hr {
     width: 250px;
-    border:solid 3px;
+    border: solid 3px;
 }
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -138,93 +156,94 @@ input[type=number] {
 .bug {
     color: rgb(34, 88, 18);
     border-color: rgb(34, 88, 18);
-  }
-  
-  .dark {
+}
+
+.dark {
     color: rgb(30, 30, 30);
     border-color: rgb(30, 30, 30);
-  }
-  
-  .dragon {
+}
+
+.dragon {
     color: rgb(9, 134, 73);
-    border-color:  rgb(9, 134, 73);;
-  }
-  
-  .electric {
+    border-color: rgb(9, 134, 73);
+    ;
+}
+
+.electric {
     color: rgb(255, 213, 0);
-    border-color: rgb(255, 213, 0);;
-    
-  }
-  
-  .fighting {
+    border-color: rgb(255, 213, 0);
+    ;
+
+}
+
+.fighting {
     color: rgb(114, 134, 0);
     border-color: rgb(114, 134, 0);
-  }
-  
-  .fire {
+}
+
+.fire {
     color: rgb(138, 0, 0);
     border-color: rgb(138, 0, 0);
-  }
-  
-  .flying {
+}
+
+.flying {
     color: rgb(105, 148, 201);
     border-color: rgb(105, 148, 201);
-  }
-  
-  .fairy {
+}
+
+.fairy {
     color: rgb(162, 30, 145);
     border-color: rgb(162, 30, 145);
-  }
-  
-  .ghost {
+}
+
+.ghost {
     color: #3f3f3f;
     border-color: #3f3f3f;
-  }
-  
-  .grass {
-  color: rgb(3, 68, 3);
-  border-color: rgb(3, 68, 3);
-  }
-  
-  .ground {
-color: rgb(71, 36, 12);
-border-color: rgb(71, 36, 12);
-  }
-  
-  .ice {
+}
+
+.grass {
+    color: rgb(3, 68, 3);
+    border-color: rgb(3, 68, 3);
+}
+
+.ground {
+    color: rgb(71, 36, 12);
+    border-color: rgb(71, 36, 12);
+}
+
+.ice {
     color: white;
-    border-color:white ;
-  }
-  
-  .normal {
-color: rgb(174, 190, 69);
-border-color:rgb(174, 190, 69) ;
+    border-color: white;
+}
 
-  }
-  
-  .poison {
-color: rgb(62, 6, 120);
-border-color:rgb(62, 6, 120) ;
-  }
-  
-  .psychic {
-color: rgb(118, 13, 147);
-border-color: rgb(118, 13, 147);
-  }
-  
-  .rock {
-color: rgb(41, 37, 37);
-border-color: rgb(41, 37, 37);
-  }
-  
-  .steel {
-color: rgb(73, 73, 73);
-border-color: rgb(73, 73, 73);
+.normal {
+    color: rgb(174, 190, 69);
+    border-color: rgb(174, 190, 69);
 
-  }
-  
-  .water {
-color: rgb(37, 62, 224);
-border-color: rgb(37, 62, 224);
-  }
-  
+}
+
+.poison {
+    color: rgb(62, 6, 120);
+    border-color: rgb(62, 6, 120);
+}
+
+.psychic {
+    color: rgb(118, 13, 147);
+    border-color: rgb(118, 13, 147);
+}
+
+.rock {
+    color: rgb(41, 37, 37);
+    border-color: rgb(41, 37, 37);
+}
+
+.steel {
+    color: rgb(73, 73, 73);
+    border-color: rgb(73, 73, 73);
+
+}
+
+.water {
+    color: rgb(37, 62, 224);
+    border-color: rgb(37, 62, 224);
+}
