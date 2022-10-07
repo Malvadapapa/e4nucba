@@ -1,4 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 350px;
+    background-color: #ffbb13;
+    font-family: pokefont;
+}
+@font-face {
+    font-family: pokefont;
+    src: url(pokefont.ttf);
+}
+.headerContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.pokelogo{
+    width: 70%;
+}
+
+.headerContainer h1{
+    font-family: pokefont;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3840f;
+    border:solid 5px #684c07;
+    width: 70%;
+    margin: 0 auto;
+}
+.pokeForm input{}
 .printedCardsSection{
     display: flex;
     flex-direction: column;
