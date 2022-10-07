@@ -123,7 +123,7 @@ color: aliceblue;
 }
 .pokedataContainer hr{
     width: 250px;
-    border:solid 3px #c20303;
+    border:solid 3px;
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -134,3 +134,97 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+.bug {
+    color: rgb(34, 88, 18);
+    border-color: rgb(34, 88, 18);
+  }
+  
+  .dark {
+    color: rgb(30, 30, 30);
+    border-color: rgb(30, 30, 30);
+  }
+  
+  .dragon {
+    color: rgb(9, 134, 73);
+    border-color:  rgb(9, 134, 73);;
+  }
+  
+  .electric {
+    color: rgb(255, 213, 0);
+    border-color: rgb(255, 213, 0);;
+    
+  }
+  
+  .fighting {
+    color: rgb(114, 134, 0);
+    border-color: rgb(114, 134, 0);
+  }
+  
+  .fire {
+    color: rgb(138, 0, 0);
+    border-color: rgb(138, 0, 0);
+  }
+  
+  .flying {
+    color: rgb(105, 148, 201);
+    border-color: rgb(105, 148, 201);
+  }
+  
+  .fairy {
+    color: rgb(162, 30, 145);
+    border-color: rgb(162, 30, 145);
+  }
+  
+  .ghost {
+    color: #3f3f3f;
+    border-color: #3f3f3f;
+  }
+  
+  .grass {
+  color: rgb(3, 68, 3);
+  border-color: rgb(3, 68, 3);
+  }
+  
+  .ground {
+color: rgb(71, 36, 12);
+border-color: rgb(71, 36, 12);
+  }
+  
+  .ice {
+    color: white;
+    border-color:white ;
+  }
+  
+  .normal {
+color: rgb(174, 190, 69);
+border-color:rgb(174, 190, 69) ;
+
+  }
+  
+  .poison {
+color: rgb(62, 6, 120);
+border-color:rgb(62, 6, 120) ;
+  }
+  
+  .psychic {
+color: rgb(118, 13, 147);
+border-color: rgb(118, 13, 147);
+  }
+  
+  .rock {
+color: rgb(41, 37, 37);
+border-color: rgb(41, 37, 37);
+  }
+  
+  .steel {
+color: rgb(73, 73, 73);
+border-color: rgb(73, 73, 73);
+
+  }
+  
+  .water {
+color: rgb(37, 62, 224);
+border-color: rgb(37, 62, 224);
+  }
+  

@@ -24,13 +24,13 @@ const respPokemon = await fetchPokemons()
 if(!selectedPokemon.value){
     showError(selectedPokemon.value)
 } else{
-let mapedTypes = respPokemon.types.map((tipos) => {return tipos.type.name}).join(" ,")
+
 let pokeObjeto = {
     id:respPokemon.id,
     name:respPokemon.name,
     altura:`${respPokemon.height/10} mts`,
     peso:`${respPokemon.weight/10} kg`,
-    tipos: mapedTypes,
+    tipo: respPokemon.types[0].type.name,
     img: `${respPokemon.sprites.other.dream_world.front_default}`,
     hp: respPokemon.stats[0].base_stat
 }
@@ -44,9 +44,9 @@ renderCardSection.innerHTML = `
 
 <div class="pokedataContainer">
     <h3>${pokemonObjet.name.toUpperCase()}</h3>
-    <hr>
+    <hr class="${pokemonObjet.tipo}">
     <ol>
-        <li>Tipo:  ${pokemonObjet.tipos}</li>
+        <li>Tipo: <span class="${pokemonObjet.tipo}"> ${pokemonObjet.tipo}</span></li>
         <li>Peso:  ${pokemonObjet.peso}</li>
         <li>Altura:  ${pokemonObjet.altura}</li>
         <li>Puntos de Vida:  ${pokemonObjet.hp}</li>
