@@ -5,41 +5,42 @@ const form = document.getElementById("pokeForm")
 const renderCardSection = document.getElementById("printedCardsSection")
 
 
-const showError = (error) =>{
-    error === "" ?  alert("El campo se encuentra vacio") : alert("El numero seleccionado no es un Pokemón valido.")
+const showError = (error) => {
+    error === "" ? alert("El campo se encuentra vacio") : alert("El numero seleccionado no es un Pokemón valido.")
 }
 
-const fetchPokemons = async () =>{
+const fetchPokemons = async () => {
     try {
-            const res = await fetch(baseurl+selectedPokemon.value)
-    const data = await res.json()
-     return data
+        const res = await fetch(baseurl + selectedPokemon.value)
+        const data = await res.json()
+        return data
     } catch {
         showError()
     }
 }
 
 const searchedPokemon = async () => {
-const respPokemon = await fetchPokemons()
-if(!selectedPokemon.value){
-    showError(selectedPokemon.value)
-} else{
-
-let pokeObjeto = {
-    id:respPokemon.id,
-    name:respPokemon.name,
-    altura:`${respPokemon.height/10} mts`,
-    peso:`${respPokemon.weight/10} kg`,
-    tipo: respPokemon.types[0].type.name,
-    img: `${respPokemon.sprites.other.dream_world.front_default}`,
-    hp: respPokemon.stats[0].base_stat
-}
-renderPokemon(pokeObjeto)
-}
+    const respPokemon = await fetchPokemons()
+    if (!selectedPokemon.value) {
+        showError(selectedPokemon.value)
+    } else {
+        selectedPokemon.value = "";
+        let pokeObjeto = {
+            id: respPokemon.id,
+            name: respPokemon.name,
+            altura: `${respPokemon.height / 10} mts`,
+            peso: `${respPokemon.weight / 10} kg`,
+            tipo: respPokemon.types[0].type.name,
+            img: `${respPokemon.sprites.other.dream_world.front_default}`,
+            hp: respPokemon.stats[0].base_stat
+        }
+        renderPokemon(pokeObjeto)
+        
+    }
 }
 
 const renderPokemon = (pokemonObjet) => {
-renderCardSection.innerHTML = ` 
+    renderCardSection.innerHTML = ` 
 <div class="printedCard">
 
 <div class="pokedataContainer">
@@ -61,10 +62,10 @@ renderCardSection.innerHTML = `
 `
 }
 
-const init = () =>{
-form.addEventListener('submit',(e) =>{
-    e.preventDefault()
-    searchedPokemon()
-})
+const init = () => {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        searchedPokemon()
+    })
 }
 init()
