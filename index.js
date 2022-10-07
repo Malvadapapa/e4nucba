@@ -12,7 +12,8 @@ let pokeObjeto = {
     altura:`${respPokemon.height/10} mts`,
     peso:`${respPokemon.weight/10} kg`,
     tipos: mapedTypes,
-    img: `${respPokemon.sprites.other.home.front_default}`
+    img: `${respPokemon.sprites.other.home.front_default}`,
+    hp: respPokemon.stats[0].base_stat
 }
 renderPokemon(pokeObjeto)
 }
@@ -21,17 +22,22 @@ renderPokemon(pokeObjeto)
 const renderPokemon = (pokemonObjet) => {
 renderCardSection.innerHTML = ` 
 <div class="printedCard">
-   <div class="imgContainer">
-        <img src="${pokemonObjet.img}" alt=""> 
-        <h3>${pokemonObjet.name}</h3>
-    </div>
+
 <div class="pokedataContainer">
+    <h3>${pokemonObjet.name.toUpperCase()}</h3>
+    <hr>
     <ol>
-        <li>Tipo: ${pokemonObjet.tipos}</li>
-        <li>Peso: ${pokemonObjet.peso}</li>
-        <li>Altura: ${pokemonObjet.altura}</li>
+        <li>Tipo:  ${pokemonObjet.tipos}</li>
+        <li>Peso:  ${pokemonObjet.peso}</li>
+        <li>Altura:  ${pokemonObjet.altura}</li>
+        <li>Puntos de Vida:  ${pokemonObjet.hp}</li>
     </ol>
 </div>
+
+<div class="imgContainer">
+<img src="${pokemonObjet.img}" alt=""> 
+</div>
+
 </div>
 `
 }
