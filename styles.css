@@ -116,6 +116,9 @@ color: aliceblue;
     background-color: #b3840f;
     width: 300px;
     height: 300px;
+    gap: 10px;
+    line-height:1.5;
+    text-transform: capitalize;
 }
 .pokedataContainer hr{
     width: 250px;

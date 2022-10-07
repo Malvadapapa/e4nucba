@@ -31,7 +31,7 @@ let pokeObjeto = {
     altura:`${respPokemon.height/10} mts`,
     peso:`${respPokemon.weight/10} kg`,
     tipos: mapedTypes,
-    img: `${respPokemon.sprites.other.home.front_default}`,
+    img: `${respPokemon.sprites.other.dream_world.front_default}`,
     hp: respPokemon.stats[0].base_stat
 }
 renderPokemon(pokeObjeto)
